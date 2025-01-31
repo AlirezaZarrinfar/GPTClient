@@ -21,5 +21,6 @@ class ChatInline(admin.TabularInline):
 class UserAdmin(DefaultUserAdmin):
     inlines = [ChatInline]
 
+admin.site.register(Chat)
 admin.site.unregister(User) 
 admin.site.register(User, UserAdmin)

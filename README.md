@@ -10,30 +10,36 @@ This is a Django application that connects to the GPT core and acts as a client 
 
 ## Installation and Setup
 
+### Prerequisites
+- Python 3.11.4
+
 1. Clone the repository:
    ```sh
    git clone <repo-url>
    cd <project-directory>
    ```
 
-2. Create and activate a virtual environment:
+2. Ensure you have Python 3.11.4 installed.
+
+
+3. Create and activate a virtual environment:
    ```sh
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
-3. Install dependencies:
+4. Install dependencies:
    ```sh
    pip install -r requirements.txt
    ```
 
-4. Configure the database and apply migrations:
+5. Configure the database and apply migrations:
    ```sh
    python manage.py makemigrations
    python manage.py migrate
    ```
 
-5. Run the server:
+6. Run the server:
    ```sh
    python manage.py runserver
    ```
